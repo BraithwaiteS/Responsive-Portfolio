@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/grey.jpeg);
+    background-color: #ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#head{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2px;
+}
+header{
+    background-color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+p{
+    margin: 20px;
+    padding-bottom: 20px;
+    color: #777777;
+    line-height: 200%;
+}
+h1{
+   width: 100%;
+   padding: 10px;
+   background-color: #00b3b3;
+   color: #ffffff;
+   text-align: center;
+}
+h2{
+    color: #00b3b3;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+li {
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: darkgreen;
+}
+a:hover{
+    color: pink;
+}
+a:focus{
+    color: purple;
+}
+
+#bio{
+    background-color: #ffffff;
+    color: 50x#00b3b3;
+    float: left;
+}
+#title{
+    padding-bottom: 0px;
+    padding-top:  0px;
+    border-bottom: 2px #777777 solid;
+    margin: 20px;
+    margin-bottom: 5px;
+}
+#subtitle{
+    padding-top: 23px;
+}
+#form{
+    background-color: #ffffff;
+    color: #00b3b3;
+    margin: 40px;
+    height: 400px;
+}
+#container{
+    width: 79%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-top: 2px;
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    background-color:	#505050;
+    border-top: 5px #00b3b3 solid;
+    color: #ffffff;
+    text-align: center
+}
+footer{
+    padding-top: 20px;
+    color:	#A9A9A9;
+}
+#form-text{
+    padding: 10px;
+    color: #777777;
+    font-size: 18px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 30px 30px 30px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #00b3b3;
+    color: #ffffff;
+    padding: 15px 25px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: darkcyan;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 0px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 0px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+::placeholder{
+    font-size: 15px;
+    transition: opacity 1s, 1s ease;
+}
+img{
+    padding: 0px;
+    padding-bottom: 0.5px;
+    position: static;
+}
+#bio-image{
+   width: 100%;
+   padding: 20px;
+   padding-bottom: 0px;
+}
+#folio{
+    padding-left: 80px;
+    padding-right: 40px;
+}
+.text-block {
+    position: relative;
+    bottom: 73px;
+    left: 0px;
+    right: 500px;
+    background-color: #00b3b3;
+    opacity: 0.8;
+    color: white;
+    padding-right: 10px;
+    padding-top: 5px;
+    width: 210px;
+    height: 30px;
+    text-align: center;
+    font-size: 130%;
+}
+.column{
+    padding: 5px;
+    padding-left: 0px;
+    width: 30%;
+}
+.para::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*I accidentally made the styling to be min-width: 460px instead or 640px)*/
+@media only screen and (min-width: 640px){
+    header{
+        position: static;
+        margin-bottom: 50px;
+    }
+
+    #head{
+        width: 79%;
+    }
+
+    h1{
+        width: 40%;
+        float: left;
+    }
+
+    #bio-image{
+        float: left;
+        margin: 30px;
+        height: 250px;
+        width: 250px;
+    }
+    
+    ul{
+        float: right;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    p{
+        line-height: 300%;
+        margin: 10px;
+    }
+
+    img{
+        padding-bottom: 30px;
+    }
+
+    #footer{
+        height: 6%;
+    }
+
+    footer{
+        padding-top: 10px;
+    }
+    
+    .col-25, .col-75, input[type=submit] {
+        width: 20;
+        margin-top: 0;
+      }
+
+    input[type=text], select, textarea{
+        resize: vertical;
+        padding: 12px;
+    }
+
+    #form-text{
+        padding-left: 10px;
+    }
+
+    #form{
+        margin: 80px;
+        height: 400px;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+
+    #form-text{ 
+        font-size: 20px;
+    }
+    
+    .column{
+        float: left;
+        padding: 0px;
+        width: 4
+    }
+
+    .text-block{
+        padding-right: 20px;
+        padding-top: 2px;
+        width: 200px;
+        left: 30px;
+    }
+
+    #folio{
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+
+    img{
+        padding: 30px;
+    }
+@media only screen and (min-width: 768px){
+    
+    #bio-image{
+        float: left;
+        margin: 30px;
+        height: 250px;
+        width: 270px;
+    }
+
+    ul{
+        float: right;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .column{
+        padding: 5px;
+        padding-left: 30px;
+        width: 50%;
+    }
+
+    #folio{
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    .text-block {
+        position: relative;
+        bottom: 73px;
+        left: 0px;
+        right: 500px;
+        background-color: #00b3b3;
+        opacity: 0.8;
+        color: white;
+        padding-right: 10px;
+        padding-top: 5px;
+        width: 210px;
+        height: 30px;
+        text-align: center;
+        font-size: 130%;
+    }
+    
+    #form{
+        margin-top: 10px;
+    }
+    
+}
+@media only screen and (min-width: 980px){
+     #form-text{
+        float: left;
+    }
+
+    input[type=text], select, textarea{
+        resize: vertical;
+        padding-right: 150px;
+    }
+
+    form{
+        margin: 10px;
+        height: 400px;
+    }
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 0px;
+    }
+    
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 5px;
+    }
+
+    input[type=text], select, textarea {
+        width: 210%;
+    }
+
+    input[type=submit] {
+        margin-right: -300px;
+    }
+
+    .column{
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 70px;
+    }
+
+    #form{
+        margin-top: 10px;
+    }
+}
+
